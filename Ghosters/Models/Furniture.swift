@@ -11,7 +11,7 @@ struct Furniture: Identifiable {
     
     var position: CGPoint = CGPoint(x: 0.5, y: 0.5)   // Relative position (0.0 to 1.0)
     var zPosition: CGFloat = 1  // Layering
-    var scale: CGFloat = 1.0    // Size mulitplier (maybe you'll never use this btw)
+    var scale: CGFloat = 1.0    // Size mulitplier
 }
 
 extension Furniture {
@@ -51,7 +51,7 @@ extension Furniture {
                   uncleanImage: "frame-dirty",
                   cleanedImage: "frame-clean",
                   targetScore: 100,
-                  position:CGPoint(x: 0.5, y: 0.7),
+                  position:CGPoint(x: 0.5, y: 0.75),
                  zPosition: 1,
                   scale: 0.5)
     ]
@@ -63,20 +63,23 @@ extension Furniture {
                   cleanedImage: "bed-clean",
                   targetScore: 100,
                   position: CGPoint(x: 0.4, y: 0.37),
+                  zPosition: 1,
                   scale: 1.0),
         
         Furniture(name: "chandelier",
                   uncleanImage: "chandelier-dirty",
                   cleanedImage: "chandelier-clean",
                   targetScore: 100,
-                  position: CGPoint(x: 0.5, y: 0.65),
-                  scale: 0.6),
+                  position: CGPoint(x: 0.4, y: 0.67),
+                  zPosition: 1,
+                  scale: 0.5),
         
         Furniture(name: "bookshelf",
                   uncleanImage: "bookshelf-dirty",
                   cleanedImage: "bookshelf-clean",
                   targetScore: 100,
-                  position: CGPoint(x: 0.8, y: 0.371),
-                  scale: 0.6)
+                  position: CGPoint(x: 0.788, y: 0.35),
+                  zPosition: 0,
+                  scale: 0.55)
     ]
 }

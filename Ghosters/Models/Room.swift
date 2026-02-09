@@ -20,7 +20,7 @@ enum RoomType {
     var backgroundImage: String {
         switch self {
         case .livingRoom: return "livingRoom-bg"
-        case .bedroom: return "bedroom-bg"
+        case .bedroom: return "bedroom-bg-clean"
         }
     }
     
